@@ -1,32 +1,11 @@
 import React from "react"
 
-class TodoItem extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            checked: false,
-        };
-    };
+const TodoItem = ({ children, checked, handleCheck }) => (
+  <div className="todo-item">
+    <input type="checkbox" defaultChecked={checked} onChange={e => handleCheck(children)} />
+    <span>{children.name}</span>
+  </div>
+);
 
-    handleCheck = (children) => {
-        const time = new Date()
-        console.log(`Action "${children}" was changed at ${time.toLocaleTimeString()}`)
-        this.setState({checked: !this.state.checked});
-    };
-
-    render() {
-        const { children } = this.props;
-        return (
-            <div className="todo-item">
-                <input
-                    type="checkbox"
-                    defaultChecked={this.state.checked}
-                    onChange={e => this.handleCheck(children)}
-                />
-                <span>{children}</span>
-            </div>
-        );
-    }
-}
 
 export default TodoItem
