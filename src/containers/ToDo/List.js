@@ -5,7 +5,7 @@ import './style.css'
 
 const todo = ['Action 1', 'Action 2','Action 3' ]
 
-class App extends React.Component {
+class List extends React.Component {
     render() {
         return (
             <>
@@ -22,4 +22,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default List;

@@ -6,7 +6,7 @@ const todo = [{ name: 'Action 1', checked: false, id: 1},
   { name: 'Action 2', checked: false, id: 2},
   { name: 'Action 3', checked: false, id: 3}]
 
-class App extends React.Component {
+class TodoList extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -52,4 +52,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default TodoList;
