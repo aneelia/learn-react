@@ -1,1 +1,1 @@
-Go to study with create-react-app!
+Go to study with the create-react-app! 🎉
