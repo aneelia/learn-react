@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoItem from "./TodoItem"
 import Button from './Button'
+import './todo.css'
 
 const todo = [{ name: 'Action 1', checked: false, id: 1},
   { name: 'Action 2', checked: false, id: 2},
