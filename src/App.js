@@ -1,7 +1,6 @@
 import React from 'react';
-import TodoList from './containers/LiftingUpState/TodoList'
-import List from './containers/ToDo/List'
+import Container from "./patterns/render-prop/useful";
 
-const App = () => <div><TodoList /></div>
+const App = () => <div><Container /></div>
 
 export default App;
