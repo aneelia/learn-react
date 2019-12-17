@@ -1,6 +1,11 @@
 import React from 'react';
-import Container from "./patterns/render-prop/useful";
+import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/hoc/simple";
 
-const App = () => <div><Container /></div>
-
+const App = () =>  (
+    <div>
+        <InputWithNameValidation />
+        <div />
+        <InputWithNameAndEmailValidation />
+    </div>
+)
 export default App;
