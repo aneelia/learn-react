@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/hoc/simple";
+import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/hoc/withRequired";
 
 const App = () =>  (
     <div>

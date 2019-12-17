@@ -1,7 +1,7 @@
 import React from "react";
 import { InputGroup } from "./inputGroup";
 
-import "./styles.css";
+import "./style.css";
 
 const withRequired = (Component, requiredKeys) => {
     return class withRequired extends React.Component {
