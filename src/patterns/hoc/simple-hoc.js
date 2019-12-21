@@ -17,11 +17,11 @@ const enhancer = (Component) => {
                 <Component>
                     <h1>My HOC</h1>
                 </Component>
-            );
+            )
         }
     }
 }
 
 const SimpleHOC = enhancer(SharedComponent)
 
-export default SimpleHOC
+export default SimpleHOC;
