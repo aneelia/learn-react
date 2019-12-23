@@ -3,15 +3,11 @@ import React from 'react';
 // import TodoList from "./containers/LiftingUpState/TodoList";
 // import TodoList from "./components/TodoList";
 // import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/render-prop/input/wrapper";
-import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/hoc/input/withRequired";
+// import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/hoc/input/withRequired";
 
 const App = () =>  (
     <div>
-        Patterns
-        <br/>
-        <InputWithNameValidation />
-        <br/>
-        <InputWithNameAndEmailValidation />
+       Routing
     </div>
 )
 export default App;
