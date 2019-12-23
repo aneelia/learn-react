@@ -4,13 +4,12 @@ const Home = () => <div>Home</div>
 const About = () => <div>About</div>
 const NotFound = () => <div>404</div>
 
-
 class HistoryAPIRoute extends React.Component {
-    state = { location: window.location}
+    state = { location: window.location }
 
     handleClick = event => {
         event.preventDefault();
-        window.history.pushState(null, null, event.target.href);
+        window.history.pushState(null, null, event.target.href)
         this.setState({ location: window.location })
     }
 
@@ -24,7 +23,6 @@ class HistoryAPIRoute extends React.Component {
 
     render() {
         let RouteItem
-
         const { location } = this.state
 
         switch (location.pathname) {
@@ -35,7 +33,7 @@ class HistoryAPIRoute extends React.Component {
                 RouteItem = About;
                 break;
             default:
-                RouteItem = NotFound
+                RouteItem = NotFound;
         }
 
         return (
@@ -46,8 +44,8 @@ class HistoryAPIRoute extends React.Component {
                 </ul>
                 <RouteItem />
             </div>
-        )
+        );
     }
 }
 
-export default HistoryAPIRoute
+export default HistoryAPIRoute;
