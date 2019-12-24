@@ -5,9 +5,15 @@ import React from 'react';
 // import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/render-prop/input/wrapper";
 // import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./patterns/hoc/input/withRequired";
 
+// import OldFashionRoute from "./routing/old-fashion-route";
+// import HistoryAPIRoute from "./routing/history-api-route";
+// import ReactRouterRoute from "./routing/react-router-route";
+import Routing from "./routing/react-router/routing";
+
 const App = () =>  (
     <div>
        Routing
+        <Routing />
     </div>
 )
 export default App;
