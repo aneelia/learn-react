@@ -8,12 +8,12 @@ import React from 'react';
 // import OldFashionRoute from "./routing/old-fashion-route";
 // import HistoryAPIRoute from "./routing/history-api-route";
 // import ReactRouterRoute from "./routing/react-router-route";
-import Routing from "./routing/react-router/routing";
+// import Routing from "./routing/react-router/routing";
+// import TodoListWithHooks from "./hooks/base-actions/TodoListWithHooks";
 
 const App = () =>  (
     <div>
-       Routing
-        <Routing />
+        {/* Place for component here */}
     </div>
 )
 export default App;
