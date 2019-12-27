@@ -7,8 +7,7 @@ const todo = [{ name: 'Action 1', checked: false, id: 1},
     { name: 'Action 3', checked: false, id: 3}]
 
  const TodoListWithHooks  = () => {
-     const [elements, setElements] = useState([])
-
+    const [elements, setElements] = useState([])
      useEffect(() => setElements(todo),[])
 
     const handleCheck = ({ name, checked, id }) => {
@@ -26,18 +25,18 @@ const todo = [{ name: 'Action 1', checked: false, id: 1},
         console.log(`Finished tasks: ${count}`)
     }
 
-     return (
-            <>
-                <div className="todo-list">
-                    {elements.map((item) => (
-                        <TodoItem key={item.id} handleCheck={handleCheck}>{item}</TodoItem>
-                    ))}
-                </div>
-                <div className="btn-wrapper">
-                    <Button handleClick={handleClick} />
-                </div>
-            </>
-        )
+    return (
+        <>
+            <div className="todo-list">
+                {elements.map((item) => (
+                    <TodoItem key={item.id} handleCheck={handleCheck}>{item}</TodoItem>
+                ))}
+            </div>
+            <div className="btn-wrapper">
+                <Button handleClick={handleClick} />
+            </div>
+        </>
+     )
 }
 
 export default TodoListWithHooks;
