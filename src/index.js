@@ -5,22 +5,9 @@ import './index.css';
 import ReduxApp from './App-redux';
 import { createStore } from "redux";
 import { Provider } from 'react-redux'
+import reducer from './redux/reducers'
 
-const initialState = ["first", "second"]
-
-function changeStore(state = initialState, action) {
-    console.log(action)
-
-    if(action.type === 'WRITE') {
-        return [
-            ...state,
-            action.payload
-        ]
-    }
-    return state
-}
-
-const store = createStore(changeStore)
+const store = createStore(reducer)
 
 ReactDOM.render(
     <Provider store={store}>

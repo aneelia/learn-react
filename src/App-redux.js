@@ -15,7 +15,7 @@ class ReduxApp extends React.Component{
                 <input type="text" ref={input => this.inputValue = input } />
                 <button onClick={this.handleClick.bind(this)}>Click me</button>
                 <ul>
-                    {this.props.testStore.map(item => (
+                    {this.props.books.map(item => (
                         <li key={item}>{item}</li>
                     ))}
                 </ul>
@@ -27,7 +27,8 @@ class ReduxApp extends React.Component{
 export default connect(
     // mapStateToProps
     state => ({
-        testStore: state
+        books: state.books,
+        films: state.films,
     }),
     // mapDispatchToProps
     dispatch => ({
