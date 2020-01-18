@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import { books } from "./books";
-import { films } from "./films";
+import frameworks from "./frameworks";
+import libraries from "./libraries";
 
 export default combineReducers({
-    books,
-    films
- })
+    frameworks,
+    libraries
+})

@@ -13,6 +13,7 @@ import React from 'react';
 
 const App = () =>  (
     <div>
+        Hello, Redux
         {/* Place for component here */}
     </div>
 )
