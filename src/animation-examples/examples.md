@@ -15,4 +15,5 @@ https://jsbin.com/jezukac/edit?html,css,output<br/>
 https://jsbin.com/yamizap/edit?html,css,output<br/>
 https://jsbin.com/kocogas/edit?html,css,output<br/>
 
-### JS-анимации
+### JS-анимации (requestAnimationFrame)
+https://jsbin.com/jagorar/edit?html,css,js,output
