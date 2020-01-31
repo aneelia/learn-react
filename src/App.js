@@ -1,4 +1,6 @@
 import React from 'react';
+// import styled, { css } from 'styled-components'
+
 // import BlogPost from "./containers/BlogPostContainer/BlogPost/BlogPost";
 // import TodoList from "./containers/LiftingUpState/TodoList";
 // import TodoList from "./components/TodoList";
@@ -11,9 +13,11 @@ import React from 'react';
 // import Routing from "./routing/react-router/routing";
 // import TodoListWithHooks from "./hooks/base-actions/TodoListWithHooks";
 
+// import List from "./styled-components-examples/ToDo/List";
+// import StyledComponents from "./styled-components-examples/simple-example";
+
 const App = () =>  (
     <div>
-        Hello, Redux
         {/* Place for component here */}
     </div>
 )

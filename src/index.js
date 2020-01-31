@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import ReduxApp from "./App-redux";
+import App from './App';
+// import ReduxApp from "./App-redux";
 import { Provider } from 'react-redux'
 
 import { createStore, applyMiddleware, compose } from "redux";
@@ -15,6 +15,6 @@ const store = createStore(reducer,
 
 ReactDOM.render(
     <Provider store={store}>
-        <ReduxApp />
+        <App />
     </Provider>,
     document.getElementById('root'));
