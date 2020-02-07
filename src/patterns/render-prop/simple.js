@@ -1,23 +1,19 @@
-import React from "react"
+import React from 'react';
 
 class SharedComponent extends React.Component {
-    render() {
-        return (
-            <div>
-                {this.props.render({ prop: 'my default prop' })}
-            </div>
-        );
-    }
+  render() {
+    return <div>{this.props.render({ prop: 'my default prop' })}</div>;
+  }
 }
 
 const RenderPropComponent = () => (
-    <SharedComponent
-        render={({ prop }) => (
-            <h1>
-                <b>{prop}</b>
-            </h1>
-        )}
-    />
+  <SharedComponent
+    render={({ prop }) => (
+      <h1>
+        <b>{prop}</b>
+      </h1>
+    )}
+  />
 );
 
-export default RenderPropComponent
+export default RenderPropComponent;

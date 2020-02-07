@@ -1,10 +1,9 @@
-import React from "react"
+import React from 'react';
 
-const Button = ({ handleClick }) =>
+const Button = ({ handleClick }) => (
   <button className="btn" onClick={handleClick}>
     Count finished tasks
   </button>
+);
 
-
-
-export default Button
+export default Button;

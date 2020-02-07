@@ -1,5 +1,5 @@
-import React from "react"
-import styled from 'styled-components/macro'
+import React from 'react';
+import styled from 'styled-components/macro';
 
 const StyledButton = styled.button`
   font: inherit;
@@ -13,25 +13,21 @@ const StyledButton = styled.button`
   color: #ffffff;
   background-color: #9555af;
   cursor: pointer;
-  
+
   &:hover {
     color: #9555af;
     border-color: currentColor;
     background-color: white;
   }
-`
+`;
 
 class Button extends React.Component {
-    handler = ()=> {
-        console.log(`Finished task: `)
-    }
-    render() {
-        return (
-            <StyledButton>
-                Count finished tasks
-            </StyledButton>
-        );
-    }
+  handler = () => {
+    console.log(`Finished task: `);
+  };
+  render() {
+    return <StyledButton>Count finished tasks</StyledButton>;
+  }
 }
 
-export default Button
+export default Button;

@@ -17,9 +17,5 @@ import React from 'react';
 // import List from "./styled-components-examples/ToDo-reflexbox/List";
 // import StyledComponents from "./styled-components-examples/simple-example";
 
-const App = () =>  (
-    <div>
-        {/* Place for component here */}
-    </div>
-)
+const App = () => <div>{/* Place for component here */}</div>;
 export default App;
