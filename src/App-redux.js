@@ -41,5 +41,5 @@ export default connect(
     addElement: elem => {
       dispatch({ type: 'ADD_LIBRARY', payload: elem });
     },
-  })
+  }),
 )(ReduxApp);

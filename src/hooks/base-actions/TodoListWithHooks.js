@@ -17,7 +17,7 @@ const TodoListWithHooks = () => {
     console.log(`Action "${name}" was changed at ${time.toLocaleTimeString()}`);
 
     const elems = elements.map(item =>
-      item.id === id ? { ...item, checked: !checked } : item
+      item.id === id ? { ...item, checked: !checked } : item,
     );
 
     setElements(elems);

@@ -33,7 +33,7 @@ class TodoItem extends React.Component {
   handleCheck = children => {
     const time = new Date();
     console.log(
-      `Action "${children}" was changed at ${time.toLocaleTimeString()}`
+      `Action "${children}" was changed at ${time.toLocaleTimeString()}`,
     );
     this.setState({ checked: !this.state.checked });
   };
