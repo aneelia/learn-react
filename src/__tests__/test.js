@@ -1,11 +1,22 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16'
-import Button from '../components/Button';
+// import expect method for checking results
+import '@testing-library/jest-dom/extend-expect';
+import { render, screen } from '@testing-library/react';
 
-describe('<Button />', () => {
-  it('renders an `.btn`', () => {
-    const wrapper = shallow(<Button />);
-    expect(wrapper.find('button')).toHaveLength(1)
-  });
+const ShowText = ({ children }) => <div>{children}</div>;
+
+test('check text in document after rendering', () => {
+  const testMessage = 'Test Message';
+  render(<ShowText>{testMessage}</ShowText>);
+
+  expect(screen.getByText(testMessage)).toBeInTheDocument();
 });
+
+test('check click attribute', () => {
+  const testMessage = 'Test Message';
+  render(<ShowText>{testMessage}</ShowText>);
+
+  expect(screen.getByText(testMessage)).toHaveAttribute('click');
+});
+
+xtest('skip this', () => {});
