@@ -21,6 +21,7 @@
     "import/first": "error",
     "react/no-did-mount-set-state": "off",
     "react/no-unused-prop-types": "off",
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "off"
   }
 }
