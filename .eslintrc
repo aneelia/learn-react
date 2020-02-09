@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["babel", "import", "react", "prettier"],
+  "extends": ["eslint:recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-console": "error",
+    "no-eval": "error",
+    "no-alert": "error",
+    "import/first": "error",
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off",
+    "prettier/prettier": ["error"]
+  }
+}
