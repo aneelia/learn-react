@@ -1,22 +1,23 @@
 import React from 'react';
 // import expect method for checking results
 import '@testing-library/jest-dom/extend-expect';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { Simulate } from 'react-dom/test-utils';
 
-const ShowText = ({ children }) => <div>{children}</div>;
+const Button = () => (
+  <button onClick={() => {}}>Click me!</button>
+);
 
-test('check text in document after rendering', () => {
-  const testMessage = 'Test Message';
-  render(<ShowText>{testMessage}</ShowText>);
+test('check button in thee DOM after rendering', () => {
+  const { getByText } = render(<Button />);
+  const button = getByText('Click me!');
 
-  expect(screen.getByText(testMessage)).toBeInTheDocument();
+  expect(button).toBeInTheDocument();
 });
 
-test('check click attribute', () => {
-  const testMessage = 'Test Message';
-  render(<ShowText>{testMessage}</ShowText>);
+test('check if button clicked', () => {
+  const { getByText } = render(<Button />);
+  const button = getByText('Click me!');
 
-  expect(screen.getByText(testMessage)).toHaveAttribute('click');
+  Simulate.click(button);
 });
-
-xtest('skip this', () => {});
