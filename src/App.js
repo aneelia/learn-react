@@ -18,13 +18,9 @@ import React from 'react';
 // import StyledComponents from "./styled-components-examples/simple-example";
 // import StyledComponents from "./styled-components-examples/simple-example";
 
-import Form from './forms/Form';
-import DiverseForm from './forms/DiverseForm';
-import UseRefComponent from './forms/UseRefComponent';
+// import Form from './forms/Form';
+// import DiverseForm from './forms/DiverseForm';
+// import UseRefComponent from './forms/UseRefComponent';
 
-const App = () => (
-  <div>
-    <UseRefComponent />
-  </div>
-);
+const App = () => <div>{/* Place for component here */}</div>;
 export default App;

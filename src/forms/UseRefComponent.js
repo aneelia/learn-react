@@ -8,10 +8,11 @@ function UseRefComponent() {
   };
 
   return (
-    <>
+    <div>
+      <h1>Forms</h1>
       <input ref={inputRef} type="text" />
       <button onClick={handleClick}>Focus it!</button>
-    </>
+    </div>
   );
 }
 
