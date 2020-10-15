@@ -16,6 +16,15 @@ import React from 'react';
 // import List from "./styled-components-examples/ToDo/List";
 // import List from "./styled-components-examples/ToDo-reflexbox/List";
 // import StyledComponents from "./styled-components-examples/simple-example";
+// import StyledComponents from "./styled-components-examples/simple-example";
 
-const App = () => <div>{/* Place for component here */}</div>;
+import Form from './forms/Form';
+import DiverseForm from './forms/DiverseForm';
+import UseRefComponent from './forms/UseRefComponent';
+
+const App = () => (
+  <div>
+    <UseRefComponent />
+  </div>
+);
 export default App;
