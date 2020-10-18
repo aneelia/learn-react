@@ -29,10 +29,6 @@ class DiverseForm extends React.Component {
   };
 
   handleClick = () => {
-    // 1 - log input value
-    // console.log(this.inputRef.current.value);
-
-    // 2 - see the differences between DOM and React.Component elements
     console.log(this.inputRef.current);
     console.log(this.componentRef.current);
   };
@@ -63,14 +59,21 @@ class DiverseForm extends React.Component {
 
           <label>
             Никакого контроля!
-            <input ref={this.inputRef} type="text" value="baaaad input" />
+            <input
+              ref={this.inputRef}
+              name="refInput"
+              type="text"
+              value="baaaad input"
+            />
           </label>
 
           <label>
             Абсолютная анархия
-            <UncontrolledComponent ref={this.componentRef} />
+            <UncontrolledComponent
+              name="refComponent"
+              ref={this.componentRef}
+            />
           </label>
-
           <button onClick={this.handleClick}>Отправка формы</button>
         </form>
       </div>

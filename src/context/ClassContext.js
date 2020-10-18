@@ -12,6 +12,7 @@ class Parent extends React.Component {
   render() {
     return (
       <CustomContext.Provider value={this.state.value}>
+        <h1>Class</h1>
         <ChildrenLevelOne />
       </CustomContext.Provider>
     );
@@ -24,7 +25,7 @@ const ChildrenLevelTwo = () => <ChildrenLevelThree />;
 
 const ChildrenLevelThree = () => (
   <CustomContext.Consumer>
-    {prop => <h1>{prop.title}</h1>}
+    {prop => <h2>{prop.title}</h2>}
   </CustomContext.Consumer>
 );
 
