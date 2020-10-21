@@ -22,13 +22,9 @@ import React from 'react';
 // import DiverseForm from './forms/DiverseForm';
 // import UseRefComponent from './forms/UseRefComponent';
 
-import PropDrilling from './context/PropDrilling';
-import ClassContext from './context/ClassContext';
-import FunctionContext from './context/FunctionContext';
+// import PropDrilling from './context/PropDrilling';
+// import ClassContext from './context/ClassContext';
+// import FunctionContext from './context/FunctionContext';
 
-const App = () => (
-  <div>
-    <PropDrilling />
-  </div>
-);
+const App = () => <div>{/* Place for component here */}</div>;
 export default App;
